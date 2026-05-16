@@ -62,16 +62,6 @@ The platform simulates interview rounds, evaluates responses, provides AI-genera
 
 
 
-## ⚙️ Getting Started
-
-### Prerequisites
-- Node.js v18+
-- MongoDB (local or Atlas)
-- OpenAI API key
-
-
-
-
 ---
 
 ## 🤝 Contributing
@@ -79,14 +69,9 @@ The platform simulates interview rounds, evaluates responses, provides AI-genera
 Contributions are welcome! Please follow these steps:
 
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 ## 👨‍💻 Author
 
-Built with ❤️ by **[Your Name](https://github.com/your-username)**
+Built with ❤️ by **[Sonu kumar yadav](https://github.com/your-username)**
 
 > ⭐ Star this repo if you find it helpful!
