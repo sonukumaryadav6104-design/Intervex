@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import maleVideo from "../assets/videos/male-ai.mp4?url";
-import femaleVideo from "../assets/videos/female-ai.mp4?url";
+import maleVideo from "../assets/videos/male-ai.mp4";
+import femaleVideo from "../assets/videos/female-ai.mp4";
 import { motion, AnimatePresence } from "motion/react";
 import { FaMicrophone, FaMicrophoneSlash } from "react-icons/fa";
 import { BsArrowRight, BsCheckCircleFill } from "react-icons/bs";
