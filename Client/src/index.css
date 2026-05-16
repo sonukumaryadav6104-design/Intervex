@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Orb float animations */
+@keyframes orbFloat1 {
+  0%   { transform: translate(0px, 0px) scale(1);    opacity: 0.7; }
+  33%  { transform: translate(-60px, 40px) scale(1.15); opacity: 1; }
+  66%  { transform: translate(30px, -50px) scale(0.9);  opacity: 0.5; }
+  100% { transform: translate(0px, 0px) scale(1);    opacity: 0.7; }
+}
+
+@keyframes orbFloat2 {
+  0%   { transform: translate(0px, 0px) scale(1);    opacity: 0.6; }
+  40%  { transform: translate(50px, -30px) scale(1.2);  opacity: 0.9; }
+  70%  { transform: translate(-40px, 60px) scale(0.85); opacity: 0.4; }
+  100% { transform: translate(0px, 0px) scale(1);    opacity: 0.6; }
+}
+
+@keyframes gradientShift {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+}
+        
+@keyframes orbPulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.08); }
+}
+
+.premium-bg {
+  position: relative;
+  background: linear-gradient(120deg, #020617, #0f172a, #1e1b4b, #020617);
+  background-size: 300% 300%;
+  animation: gradientShift 12s ease infinite;
+  
+  
+  isolation: isolate;
+}
+
+/* Orb 1 — top right */
+.premium-bg::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(139,92,246,0.25), transparent 60%);
+  top: -100px;
+  right: -100px;
+  filter: blur(80px);
+  z-index: 0;
+  /* Floating + pulsing */
+  animation:
+    orbFloat1 14s ease-in-out infinite,
+    orbPulse  7s ease-in-out infinite;
+  transition: background 1.2s ease;
+}
+
+/* Orb 2 — bottom left */
+.premium-bg::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(59,130,246,0.2), transparent 60%);
+  bottom: -100px;
+  left: -100px;
+  filter: blur(80px);
+  z-index: 0;
+  /* Floating out of phase with orb 1 */
+  animation:
+    orbFloat2 17s ease-in-out infinite,
+    orbPulse   9s ease-in-out 2s infinite;
+  transition: background 1.2s ease;
+}
+
+.premium-content {
+  position: relative;
+  z-index: 10;
+}
