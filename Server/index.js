@@ -11,7 +11,7 @@ import interviewRouter from "./routes/interview.route.js";
 import paymentRouter from "./routes/payment.route.js";
 const app = express()
 app.use(cors({
-    origin:"https://intervex-ai.onrender.com3",
+    origin:"https://intervex-ai.onrender.com",
     credentials:true
 }))
 
