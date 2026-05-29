@@ -11,7 +11,7 @@ import InterviewHistory from './pages/InterviewHistory'
 import InterviewReport from './pages/InterviewReport'
 
 
-export const ServerUrl = "https://intervex-3.onrender.com"
+export const ServerUrl = "https://intervex-ai-6.onrender.com"
 
 function App() {
 
