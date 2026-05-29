@@ -274,11 +274,11 @@ function Home() {
                   title: "Confidence Detection",
                   desc: "Basic tone and voice analysis insights.",
                 },
-                {
+               {
                   image: creditImg,
-                  title: "Confidence Detection",
-                  desc: "Basic tone and voice analysis insights.",
-                },
+                  title: "Credit-Based Access",
+                  desc: "Use credits to unlock interviews, AI feedback, and premium features.",
+               }
               ].map((mode, index) => (
                 <motion.div
                   key={index}
