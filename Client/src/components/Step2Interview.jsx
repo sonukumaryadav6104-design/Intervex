@@ -253,7 +253,7 @@ export default function Step2Interview({ interviewData, onFinish }) {
               boxShadow: "0 1px 3px rgba(0,0,0,0.15)",
             }}>
               <video
-                src={voiceGender === "male" ?  femaleVideo : maleVideo}
+                src={voiceGender === "female" ?  femaleVideo : maleVideo}
                 key={voiceGender}
                 ref={videoRef}
                 muted playsInline preload="auto"
